@@ -84,6 +84,28 @@
       "oAP" : "\/build\/index.html",
       "oF" : 0
     },
+    "\/js\/jquery-3.5.1.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/js\/jquery-3.5.1.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/js\/main.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/js\/main.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/par--footer-links.kit" : {
       "cB" : 0,
       "ft" : 2048,
