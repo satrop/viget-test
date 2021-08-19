@@ -1,0 +1,14 @@
+footer {
+    margin-top: 10px;
+    background-color: $Dark-Blue;
+   
+    .text {
+        height: 90px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: #fff;
+        font-size: 1.4rem;
+        letter-spacing: -.13px;
+    }
+}

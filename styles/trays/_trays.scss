@@ -1,0 +1,14 @@
+.tray {
+
+    &--header {
+        @include nunito-bld;
+        padding-top: 20px;
+        padding-bottom: 80px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $Dark-Gray;
+        font-size: 1.6rem;
+        letter-spacing: 4.11px;
+        line-height: get-line-height(16px, 22px);
+    }
+}

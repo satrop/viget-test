@@ -1,0 +1,175 @@
+.tray--tabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 20px;
+
+    &__radio {
+        position: absolute;
+        opacity: 0;
+
+        &:focus {
+
+            +label {
+                outline: none;
+                box-shadow: inset 0 -4px 0 0 $Orange;
+                background-color: rgba(#000, .05);
+
+                &:hover:not(.tray--tabs__content) {
+                    box-shadow: inset 0 -4px 0 0 $Orange;
+                    color: $Orange;
+                }
+            }
+        }
+    }
+
+    &__label {
+        @include nunito-bld;
+        @extend %anim;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        background: #fff;
+        cursor: pointer;
+        border: none;
+        border-radius: 0;
+        text-align: center;
+        font-size: 1.8rem;
+        color: $Light-Blue;
+        box-shadow: inset 0 0 0 0 $Orange;
+
+        &:hover {
+            box-shadow: inset 0 -4px 0 0 darken($Light-Blue, 15%);
+            color: darken($Light-Blue, 15%);
+        }
+
+        span {
+            display: none;
+        }
+
+        svg {
+            width: 50px;
+
+            path {
+                fill: $Light-Blue;
+            }
+        }
+    }
+
+    &__radio:checked+.tray--tabs__label {
+        color: $Orange;
+        box-shadow: inset 0 -4px 0 0 $Orange;
+
+        svg {
+
+            path {
+                fill: $Orange;
+            }
+        }
+    }
+
+    &__content {
+        @extend %anim;
+        display: none;
+        padding: 50px 0;
+        background: #fff;
+        color: $Dark-Gray;
+        margin-top: -1px;
+        width: 100%;
+        box-shadow: inset 0 0 0 0 $Orange;
+        border-top: 1px solid $Light-Gray;
+        line-height: get-line-height(23px, 38.5px);
+
+        h2 {
+            @include nunito-bld;
+            font-size: 2.8rem;
+            color: $Light-Blue;
+            margin-bottom: 30px;
+        }
+    }
+
+    [name="tabs"]:nth-of-type(1):checked~[role="tabpanel"]:nth-of-type(1),
+    [name="tabs"]:nth-of-type(2):checked~[role="tabpanel"]:nth-of-type(2),
+    [name="tabs"]:nth-of-type(3):checked~[role="tabpanel"]:nth-of-type(3),
+    [name="tabs"]:nth-of-type(4):checked~[role="tabpanel"]:nth-of-type(4) {
+        display: block;
+
+        &:focus {
+            outline: none;
+            box-shadow: inset 0 0 0 4px $Orange;
+        }
+    }
+}
+
+//== Breaks --------------------------------------------------------------------------
+//==----------------------------------------------------------------------------------
+@include sm {
+
+    .tray--tabs {
+
+        &__content {
+            line-height: get-line-height(18px, 37.5px);
+        }
+    }
+}
+
+//== SM Break ---------------------
+
+@include md {
+
+    .tray--tabs {
+
+        &__label {
+            height: 103px;
+            padding-top: 52px;
+
+            span {
+                display: block;
+            }
+
+            svg {
+                display: none;
+            }
+        }
+
+        &__content {
+
+            h2 {
+                display: none;
+            }
+        }
+    }
+}
+
+//== SM Break ---------------------
+
+@include lg {
+
+    .tray--tabs {
+
+        .tray--tabs__label {
+            width: auto;
+        }
+
+        &__content {
+            padding: 50px 110px;
+
+        }
+    }
+}
+
+//== LG Break ---------------------
+
+@include xl {
+
+    .tray--tabs {
+
+        &__content {
+            padding: 50px 210px;
+        }
+    }
+}
+
+//== XL Break ---------------------

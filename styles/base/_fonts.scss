@@ -1,0 +1,50 @@
+@import url('//fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
+
+@mixin nunito-reg {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}
+
+@mixin nunito-med {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+
+@mixin nunito-bld {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+
+html {
+    font-size: 62.4%;
+}
+
+//Happy little function to get unitless line-height.
+@function get-value($n) {
+    @return $n / ($n * 0 + 1);
+}
+
+@function get-line-height($font-size, $line-height) {
+    @return get-value($line-height / $font-size);
+}
+
+body {
+    @include nunito-reg;
+    color: $Dark-Gray;
+    font-size: 1.8rem;
+    //Divide the font-size (in px) by the known line-heigth in px
+    line-height: get-line-height(18px, 37.5px);
+    letter-spacing: -.24px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+::selection {
+    background-color: rgba($Light-Blue,.9);
+    color: #fff;
+}
