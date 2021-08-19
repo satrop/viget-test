@@ -9,11 +9,51 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
+    "\/.gitignore" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/.gitignore",
+      "oF" : 0
+    },
+    "\/answers.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/answers.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
     "\/build" : {
       "ft" : 65536,
       "oA" : 1,
       "oAP" : "\/build\/build",
       "oF" : 0
+    },
+    "\/img\/dark-on-light-rgb.png" : {
+      "ft" : 32768,
+      "iS" : 7655,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/dark-on-light-rgb.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/img\/hero.jpg" : {
       "ft" : 16384,
@@ -28,12 +68,12 @@
       "q" : 100,
       "rq" : 56
     },
-    "\/index copy.kit" : {
+    "\/index-1.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/build\/index copy.html",
+      "oAP" : "\/build\/index-1.html",
       "oF" : 0
     },
     "\/index.kit" : {
@@ -319,7 +359,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 650854713.82471001,
-    "displayValue" : "Viget-Test",
+    "displayValue" : "viget-test",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-unblue",
     "iconImageWasSetByUser" : 0
